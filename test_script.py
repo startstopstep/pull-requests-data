@@ -201,7 +201,7 @@ class TestListPullRequests:
 
     def test_save_pull_requests_csv_created_file_successfuly(self, pull_requests_data, mock_pull_requests):
         pull_requests_data.save_pull_requests_csv()
-        file_path = f"test-repo_startstopstep.csv"
+        file_path = "test-repo_startstopstep.csv"
         assert os.path.exists(file_path)
         df = pd.read_csv(file_path)
         assert list(df.columns) == ["PR №", "Title", "Author", "Created At", "Updated At", "Time open", "Commits",
