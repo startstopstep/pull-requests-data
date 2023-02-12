@@ -8,7 +8,7 @@ from exceptions import ApiError
 
 class PullRequestsData:
     """
-        Class to retrieve information about pull requests from a given GitHub repository.
+        Retrieve information about pull requests from a given GitHub repository.
     """
 
     def __init__(self, repo_owner: str, repo_name: str) -> None:
@@ -101,7 +101,7 @@ class PullRequestsData:
 
     def list_comments(self, url: str) -> list:
         """
-            This method retrieves comments for a specific pull request.
+            Retrieves comments for a specific pull request.
 
             :param url: URL to retrieve comments for a pull request.
             :return: List of tuples, each tuple containing author and body of the comment.
@@ -118,7 +118,7 @@ class PullRequestsData:
 
     def save_pull_requests_csv(self) -> None:
         """
-            This method saves the pull requests information to a CSV file.
+            Saves the pull requests information to a CSV file.
 
             The file name is constructed using the `repo_name` and `repo_owner` attributes of the object.
             The data is retrieved from the `list_pull_requests` method and stored in a pandas DataFrame.
@@ -132,7 +132,7 @@ class PullRequestsData:
 
     def print_pull_requests(self) -> None:
         """
-            This method prints the pull requests information.
+            Prints the pull requests information.
         """
         pull_requests = self.list_pull_requests()
 
