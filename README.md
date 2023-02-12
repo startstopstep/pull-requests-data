@@ -8,7 +8,7 @@ Program can save result directly to the csv file or print it.
 Before starting with this project, make sure that you have the following software:
 
 ```
-Python 3.11
+Python 3.10
 ```
 
 # Installation
