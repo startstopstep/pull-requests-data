@@ -38,7 +38,7 @@ class PullRequestsData:
         return response.json()
 
     @staticmethod
-    def get_time_open(created_at: datetime) -> datetime:
+    def get_time_open(created_at: datetime) -> datetime.timedelta:
         """
             Calculates the difference between the current time and the time a pull request was created.
 
